@@ -1,0 +1,66 @@
+/* Apply a dollar pattern background to the body */
+body {
+    background-image: url('background.jpg'); /* Make sure background.jpg is in the same directory */
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+div.transbox {
+    background-color: #a0cba0;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#container {
+    width: 50%;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px;
+    overflow: hidden;
+}
+
+p, h1 {
+    text-align: center;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#error {
+    text-align: center;
+    color: red;
+    font-weight: 500;
+}
+
+label {
+    text-align: right;
+}
+
+input[type="text"] {
+    width: 80%;
+    margin: 0 auto;
+}
+
+input[type="range"] {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        width: 90%;
+    }
+    
+    input[type="text"], input[type="range"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    label {
+        padding-right: 10%;
+        }
+}
